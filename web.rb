@@ -53,7 +53,7 @@ def add_events cal, username, page = 1
     case wo['activity_type']
     when 'Cycling'
       verb = 'Rode'
-    when 'Runnning'
+    when 'Running'
       verb = 'Ran'
     end
     cal.event do
