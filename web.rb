@@ -17,7 +17,12 @@ get '/' do
   'IT WORKS'
 end
 
-get '/:username' do
+get '/robots.txt' do
+  content_type :plain
+  '# User-Agent: *'
+end
+
+get '/:username.ics' do
   content_type :ical
   cal = Calendar.new
   cal.timezone do
