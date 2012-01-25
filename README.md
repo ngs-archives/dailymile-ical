@@ -1,6 +1,6 @@
-* Dailymile iCal
+# Dailymile iCal
 
-  $ git clone git@github.com:ngs/dailymile-ical.git
-  $ heroku create
-  $ git push heroku master
+    $ git clone git@github.com:ngs/dailymile-ical.git
+    $ heroku create
+    $ git push heroku master
 
