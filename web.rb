@@ -25,14 +25,6 @@ end
 get '/:username.ics' do
   content_type :ical
   cal = Calendar.new
-  cal.timezone do
-    timezone_id             "Japan/Tokyo"
-    standard do
-      timezone_offset_from  "+0900"
-      timezone_offset_to    "+0900"
-      timezone_name         "JST"
-    end
-  end
   username = params['username']
   add_events(cal, username, 1)
   add_events(cal, username, 2)
